@@ -3,10 +3,10 @@
 my bspwm config (also some other files)
 
 Fonts used:
-    - victor mono
-    - anonymous pro
-    - hermit
-    - rajdhani
+    + victor mono
+    + anonymous pro
+    + hermit
+    + rajdhani
 
 # Alacritty
 ![alacritty](https://github.com/beet461/bspwm-config/blob/e652d43d4f8615d3ee4bce16fd93eab0179134d7/images/alacritty.png)
