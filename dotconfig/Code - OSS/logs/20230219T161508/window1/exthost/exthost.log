@@ -1,0 +1,21 @@
+2023-02-19 16:15:09.643 [info] Extension host with pid 66545 started
+2023-02-19 16:15:09.644 [info] Skipping acquiring lock for /home/rushvith/.config/Code - OSS/User/workspaceStorage/47499598ee7f75f68a588e0c697572ee.
+2023-02-19 16:15:09.699 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-02-19 16:15:09.709 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-02-19 16:15:09.709 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-02-19 16:15:09.804 [info] Eager extensions activated
+2023-02-19 16:15:09.829 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:15:09.830 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:15:09.830 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:18:39.083 [info] Extension host terminating: received terminate message from renderer
+2023-02-19 16:18:39.089 [info] Extension host with pid 66545 exiting with code 0
+2023-02-19 16:18:40.073 [info] Extension host with pid 67755 started
+2023-02-19 16:18:40.100 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-02-19 16:18:40.127 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-02-19 16:18:40.128 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-02-19 16:18:40.155 [info] Eager extensions activated
+2023-02-19 16:18:40.163 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:18:40.163 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:18:40.163 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-02-19 16:18:43.042 [info] Extension host terminating: received terminate message from renderer
+2023-02-19 16:18:43.048 [info] Extension host with pid 67755 exiting with code 0

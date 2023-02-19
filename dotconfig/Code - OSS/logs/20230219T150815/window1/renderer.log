@@ -1,0 +1,3 @@
+2023-02-19 15:08:16.981 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/rushvith/.local/bin","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-02-19 15:08:20.095 [info] [perf] Render performance baseline is 23ms
+2023-02-19 15:08:27.396 [error] Error while registering log channel file:///home/rushvith/.config/Code%20-%20OSS/logs/20230219T150815/userDataSync.log Timed out while waiting for file to be created

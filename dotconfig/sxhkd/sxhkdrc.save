@@ -1,0 +1,55 @@
+# Reload sxhkd
+shift + alt + s
+	pkill -USR1 -x sxhkd
+
+# Quit or reload bspwm
+shift + alt + {q,r}
+	bspc {quit, wm -r}
+
+# Open terminal
+mod4 + Return
+	alacritty
+
+# Close current window
+mod4 + w
+	bspc node -c
+
+# Switch to a given desktop
+mod4 + {1-9}
+	bspc desktop -f '^{1-9}'Â
+
+# Send a window to the given desktop
+mod4 + shift + {1-9}
+	bspc node -d '^{1-9}' --follow
+
+# Open rofi window launcher
+mod4 + d
+	rofilauncher 
+
+# Open rofi powermenu
+mod4 + Escape
+	rofipowermenu
+
+# Open rofi window switcher
+mod4 + Tab
+	rofi -show window -theme /home/rushvith/.config/rofi/custom/switcher_style.rasi
+
+# Adjust volume
+XF86Audio{Raise,Lower}Volume
+	amixer set Master 5%{+,-}
+
+# Mute/Unmute
+XF86AudioMute
+	pulsemixer --toggle-mute
+
+# Play/Pause
+XF86AudioPlay
+	playerctl play-pause
+
+# Next/Previous
+XF86Audio{Next,Prev}
+	playerctl {next,previous}
+
+# Adjust Brightness
+XF86MonBrightness{Up,Down}
+	backlight_control {+,-}10p

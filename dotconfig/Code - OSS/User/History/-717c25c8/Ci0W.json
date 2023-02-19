@@ -1,0 +1,41 @@
+{
+    "workbench.colorCustomizations": {
+        // non-standard, transparency patched version only
+        "workbench.background": "#46575e33",
+    
+        // VSC colors
+        // ref: https://code.visualstudio.com/api/references/theme-color
+        "activityBar.background": "#46575e33",
+        "button.background": "#00000000",
+        "button.hoverBackground": "#00000000",
+    
+        "editor.background": "#00000011",
+        "editor.lineHighlightBackground": "#FFFFFF15",
+        "editorGroupHeader.tabsBackground": "#00000050",
+        "tab.activeBackground": "#ffffff11",
+        "tab.inactiveBackground": "#00000020",
+        "tab.border": "#00000000",
+    
+        "list.activeSelectionBackground": "#00000000",
+        "list.hoverBackground": "#00000040",
+        "list.inactiveSelectionBackground": "#00000040",
+    
+        "panel.background": "#00000033",
+        "panel.border": "#00000000",
+    
+        "sideBar.background": "#46575e33",
+        "sideBarSectionHeader.background": "#00000000",
+    
+        "statusBar.background": "#00000080",
+        "statusBar.noFolderBackground": "#00000080",
+        "terminal.background": "#00000011",
+        "titleBar.activeBackground": "#00000030",
+        "menu.background": "#ff0000",
+
+        "menubar.selectionBackground": "#46575e33"
+      },
+      "window.titleBarStyle": "custom",
+      "breadcrumbs.enabled": false,
+      "security.workspace.trust.untrustedFiles": "open",
+      "editor.minimap.enabled": false
+}

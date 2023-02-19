@@ -1,2 +1,3 @@
-# .config
-my bspwm .config (also some other files)
+# bspwm-config
+
+my bspwm config (also some other files)
