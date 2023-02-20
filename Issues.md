@@ -52,3 +52,16 @@ These are some problems I ran into while configuring bspwm, so I wrote down the 
 
 ### thunar theme doesnt change: ###
 * install a theme and select it in the first panel of lxappearance
+
+## touchpad scrolling is reversed
+* create/open /etc/X11/xorg.conf.d/30-touchpad.conf
+* ``` 
+  Section "InputClass"
+    Identifier "touchpad"
+    MatchIsTouchpad "on"
+    Driver "libinput"
+    Option "Tapping" "on"
+    Option "NaturalScrolling" "true"
+  EndSection
+  ```
+* paste the above into it and logout/login
