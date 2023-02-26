@@ -8,6 +8,10 @@ Fonts used :
 * Hermit
 * Rajdhani
 
+screenshot tool: gscreenshot and ksnip
+
+Firefox Homepage - [https://github.com/beet461/firefox-homepage](https://github.com/beet461/firefox-homepage)
+
 # Alacritty
 ![alacritty](https://github.com/beet461/bspwm-config/blob/e652d43d4f8615d3ee4bce16fd93eab0179134d7/images/alacritty.png)
 
