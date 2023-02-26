@@ -34,3 +34,6 @@ Fonts used :
 
 # Thunar
 ![thunar](https://github.com/beet461/bspwm-config/blob/07e37803389f2aef1758439c8e4193b1f6ea894e/images/thunar.png)
+
+# Firefox
+![firefox]()
