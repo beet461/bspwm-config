@@ -41,7 +41,7 @@ i3lock \
 --time-size=60		\
 --date-size=33 		\
 --verif-size=10		\
---wrong-size=20		\
+--wrong-size=30		\
 --layout-size=10	\
 --radius=180	 	\
 --ring-width=5		\
