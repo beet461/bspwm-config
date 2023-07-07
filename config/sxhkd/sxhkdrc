@@ -1,4 +1,4 @@
-# Reload sxhkd
+# Reload sxhkd 
 shift + alt + s
 	pkill -USR1 -x sxhkd
 
@@ -16,7 +16,7 @@ mod4 + w
 
 # Switch to a given desktop
 mod4 + {1-9}
-	bspc desktop -f '^{1-9}'Â
+	bspc desktop -f '^{1-9}'ï¿½
 
 # Send a window to the given desktop
 mod4 + shift + {1-9}
@@ -42,9 +42,25 @@ mod4 + Tab
 mod4 + l
 	lock
 
-# Open ksnip (screenshot tool)
+# Open ksnip
 mod4 + shift + s
 	ksnip
+
+# Take a screenshot of the entire screen
+mod4 + shift + f
+	ksnip -f -s
+
+# Reload Polybar
+mod4 + p
+	~/.config/polybar/launch.sh
+
+# Expand a window
+mod4 + e : {h,j,k,l}
+	$HOME/.config/bspwm/resize expand {west,south,north,east} 10
+
+# Contract a window
+mod4 + shift + e : {h,j,k,l}
+	$HOME/.config/bspwm/resize contract {west,south,north,east} 10
 
 # Adjust volume
 XF86Audio{Raise,Lower}Volume
@@ -64,4 +80,26 @@ XF86Audio{Next,Prev}
 
 # Adjust Brightness
 XF86MonBrightness{Up,Down}
-	backlight_control {+,-}5
+	backlight_control {+,-}1
+
+# Alternatives for when XF86 keys are not available
+
+# Adjust volume
+mod4 + {b,v}
+	amixer set Master 5%{+,-}
+
+# Mute/Unmute
+mod4 + m
+	pulsemixer --toggle-mute
+
+# Play/Pause
+mod4 + c 
+	playerctl play-pause
+
+# Next/Previous
+mod4 + {x,z}
+	playerctl {next,previous}
+
+# Adjust Brightness
+mod4 + {j,n}
+	backlight_control {+,-}1

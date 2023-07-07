@@ -69,3 +69,24 @@ These are some problems I ran into while configuring bspwm, so I wrote down the 
 ### firefox transparency on tabs
 * set up a transparent theme like materia and enable it in lxappearance
 * enable a theme and then press disable
+
+### wifi is not stable/working properly
+* install networkmanager (use hotspot if necessary)
+* connect with `nmcli device wifi connect SSID password PASSWORD`
+* it should work
+
+### iwctl says NetworkConfigurationEnabled: Disabled
+* edit `/etc/iwd/main.conf` to include the line `EnableNetworkConfiguration=true`
+* if there is no `main.conf` create one and copy the following:
+* ```
+  [General]
+  EnableNetworkConfiguration=true
+  ```
+
+### Refind issue (invalid loader):
+* chroot into new arch system and mount efi partition on there, then run refind-install
+* go into refind_linux.conf (in /boot on new arch system) and change the UUIDs to the one found in /etc/fstab
+(on new arch system)
+
+### Messaged about sof-firmware issues during startup (terminal arch)
+* install `sof-firmware` from the aur

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Click on the window
+xprop | awk '/WM_CLASS/{print $4}'
