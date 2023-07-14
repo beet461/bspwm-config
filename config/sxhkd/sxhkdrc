@@ -1,34 +1,105 @@
+# Reload sxhkd 
+shift + alt + s
+	pkill -USR1 -x sxhkd
+
+# Quit or reload bspwm
+shift + alt + {q,r}
+	bspc {quit, wm -r}
+
+# Open terminal
+mod4 + Return
+	alacritty
+
+# Close current window
+mod4 + w
+	bspc node -c
+
+# Switch to a given desktop
+mod4 + {1-9}
+	bspc desktop -f '^{1-9}'�
+
+# Send a window to the given desktop
+mod4 + shift + {1-9}
+	bspc node -d '^{1-9}' --follow
+
+# Toggle window floating
+mod4 + f
+	bspc node focused -t \~floating
+
+# Open rofi window launcher
+mod4 + d
+	rofilauncher 
+
+# Open rofi powermenu
+mod4 + Escape
+	rofipowermenu
+
+# Open rofi window switcher
+mod4 + Tab
+	rofi -show window -theme /home/rushvith/.config/rofi/custom/switcher_style.rasi
+
+# Lock the screen
+mod4 + l
+	lock
+
+# Open ksnip
+mod4 + shift + s
+	ksnip
+
+# Take a screenshot of the entire screen
+mod4 + shift + f
+	ksnip -f -s
+
+# Reload Polybar
+mod4 + p
+	~/.config/polybar/launch.sh
+
+# Expand a window
+mod4 + e : {h,j,k,l}
+	$HOME/.config/bspwm/resize expand {west,south,north,east} 10
+
+# Contract a window
+mod4 + shift + e : {h,j,k,l}
+	$HOME/.config/bspwm/resize contract {west,south,north,east} 10
+
+# Adjust volume
+XF86Audio{Raise,Lower}Volume
+	amixer set Master 5%{+,-}
+
+# Mute/Unmute
+XF86AudioMute
+	pulsemixer --toggle-mute
 
 # Play/Pause
 XF86AudioPlay
-        playerctl play-pause
+	playerctl play-pause
 
 # Next/Previous
 XF86Audio{Next,Prev}
-        playerctl {next,previous}
+	playerctl {next,previous}
 
 # Adjust Brightness
 XF86MonBrightness{Up,Down}
-        backlight_control {+,-}1
+	backlight_control {+,-}1
 
 # Alternatives for when XF86 keys are not available
 
 # Adjust volume
 mod4 + {g,v}
-        amixer set Master 5%{+,-}
+	amixer set Master 5%{+,-}
 
 # Mute/Unmute
 mod4 + b
-        pulsemixer --toggle-mute
+	pulsemixer --toggle-mute
 
 # Play/Pause
-mod4 + c
-        playerctl play-pause
+mod4 + c 
+	playerctl play-pause
 
 # Next/Previous
 mod4 + {x,z}
-        playerctl {next,previous}
+	playerctl {next,previous}
 
 # Adjust Brightness
 mod4 + {j,n}
-        backlight_control {+,-}1
+	backlight_control {+,-}1
