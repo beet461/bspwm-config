@@ -1,6 +1,10 @@
 # Problems
 These are some problems I ran into while configuring bspwm, so I wrote down the solutions in case I need them in the future
 
+### bluetooth/other similar hardware issues
+* in windows disable fast startup (control panel -> hardware options)
+* then make sure you shut down every time after using windows **not restart**
+
 ### rofi error setting locale: ###
 * in `/etc/profile` add a line saying `export LC_ALL=C`
 
