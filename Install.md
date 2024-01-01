@@ -26,14 +26,15 @@ If there is no other linux/arch linux installation present, then use this method
 
 ### 5. Install arch linux
 * Mount the partition with `mount /dev/{partition block id} /mnt`
-* Run `pacstrap /mnt base linux linux-firmware nano refind...` and whatever other packages you want to install from the AUR
-* Generate an fstab file with `genfstab -U /mnt >> /mnt/etc/fstab`
+* Run `pacstrap /mnt base linux linux-firmware git base-devel iwd nano refind...` and whatever other packages you want to install from the AUR
+* Generate an fstab file with `genfstab -U /mnt >> /mnt/etc/fstab` **make sure to do this before chrooting**
 
 ### 6. Configure the arch system
 * Run `arch-chroot /mnt` to chroot into the newly created arch system
 * Enable modules like iwd etc so you can connect to wifi later
 
 ### 7. Refind entry
+* **NOTE** this step is not strictly necessary and should be done if there is no refind entry visible - refind should automatically detect it
 * Mount the EFI partition containing the bootloader into `/boot/efi` (create efi folder)
 * Run `refind-install`
 * Open `/etc/fstab` with an editor like nano and note down the UUID of your partition
