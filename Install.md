@@ -1,7 +1,5 @@
 # Install
-This is a list of the basic steps needed to install arch linux **with rEFInd** on UEFI systems. 
-
-Note: this doesn't cover how to install/set up rEFInd, which is also necessary.
+This is a list of the basic steps needed to install arch linux and rEFInd on UEFI systems. 
 
 ## Existing OS
 If there is already another installation of arch linux present you can start directly from step 3 below.
@@ -33,13 +31,10 @@ If there is no other linux/arch linux installation present, then use this method
 * Run `arch-chroot /mnt` to chroot into the newly created arch system
 * Enable modules like iwd etc so you can connect to wifi later
 
-### 7. Refind entry
-* **NOTE** this step is not strictly necessary and should be done if there is no refind entry visible - refind should automatically detect it
-* Mount the EFI partition containing the bootloader into `/boot/efi` (create efi folder)
+### 7. Refind install
+* Mount efi partition at `/boot/efi` e.g. `mount /dev/{efi partition id} /boot/efi`
 * Run `refind-install`
-* Open `/etc/fstab` with an editor like nano and note down the UUID of your partition
-* Open `/boot/refind_linux.conf` (should be created by refind-install) and replace the UUIDs there with the one you found in the fstab file
-* This should mean there is now another entry for your new arch linux system when you go into the rEFInd boot menu
+* If `refind_linux.conf` exists in `/boot` delete it (refind will automatically configure when booting)
 
 ### 8. Create user/set password
 * To set the root password run `passwd` and set your password
