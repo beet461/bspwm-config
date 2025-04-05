@@ -94,3 +94,11 @@ These are some problems I ran into while configuring bspwm, so I wrote down the 
 
 ### Messaged about sof-firmware issues during startup (terminal arch)
 * install `sof-firmware` from the aur
+
+### Speakers not detected / pulseaudio not working properly ###
+* delete `.config/pulse`
+* reboot
+
+### firefox time is not correct ###
+* enable ntp service
+* `sudo timedatectl set-ntp true`
