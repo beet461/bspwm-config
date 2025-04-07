@@ -102,3 +102,6 @@ These are some problems I ran into while configuring bspwm, so I wrote down the 
 ### firefox time is not correct ###
 * enable ntp service
 * `sudo timedatectl set-ntp true`
+
+### laptop speaker disappears from outputs in pavucontrol ###
+* go to configuration and choose different profile with speaker in it
