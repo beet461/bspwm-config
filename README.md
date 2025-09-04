@@ -12,6 +12,8 @@ screenshot tool: gscreenshot and ksnip
 
 Firefox Homepage - [https://github.com/beet461/firefox-homepage](https://github.com/beet461/firefox-homepage)
 
+icon pack - https://github.com/IgorFerreiraMoraes/Mignon-icon-theme.git
+
 # Alacritty
 ![alacritty](https://github.com/beet461/bspwm-config/blob/e652d43d4f8615d3ee4bce16fd93eab0179134d7/images/alacritty.png)
 
