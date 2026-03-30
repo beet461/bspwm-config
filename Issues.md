@@ -105,3 +105,10 @@ These are some problems I ran into while configuring bspwm, so I wrote down the 
 
 ### laptop speaker disappears from outputs in pavucontrol ###
 * go to configuration and choose different profile with speaker in it
+
+### bluetooth speakers shown as source with wireplumber
+* downgrade bluez
+* `yay -S downgrade`
+* `sudo downgrade bluez`
+* select version 5.85
+* confirm ignore package
